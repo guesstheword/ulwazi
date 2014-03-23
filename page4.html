@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<head>
+
+<meta charset="utf-8" />
+
+    <title>Guess the Word!</title>
+
+    <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <br />
+            <h1>Guess the Word!</h1>
+            <h3>Knowledge helps you learn and grow, let's see how much you know!</h3>
+            
+        
+            <br /><br />
+        </div>
+        <div class="main_col" </div> 
+            <h2> Level 3: </h2>
+            <h2> In each box, type the word to match each picture. Then, press Submit.
+            </h2>
+        
+            <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+                <script type="text/javascript">
+                    $(document).ready(function() {
+                        var score = 0;
+                        $('.submit').click(function() {
+                            var answer = $(this).parent().find('.answer').val();
+                            if(answer.toLowerCase() === $(this).parent().data('answer')) {
+                                score++;
+                                alert("Great job, you are correct!");
+                            } else {
+                                alert("Sorry, that answer is incorrect!");
+                            }
+                            $("#score").html("Score:" + score)
+                        });
+
+                    });
+                </script>
+
+                <form>
+                    <div class="question" data-answer="bottle" >      
+                        <p style="font-size: 25px;">1.</p>
+                        <img src="http://img2.timeinc.net/health/images/gallery/living/water-bottle-fluoride-400x400.jpg" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="nose" >       
+                        <p style="font-size: 25px;">2.</p>
+                        <img src="http://thumbs.dreamstime.com/x/cartoon-nose-13375068.jpg" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="phone" >       
+                        <p style="font-size: 25px;">3.</p>
+                        <img src="http://thumbs.dreamstime.com/x/no-mobile-phone-sign-please-use-vibrate-silen-26296491.jpg" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="table" >       
+                        <p style="font-size: 25px;">4.</p>
+                        <img src="http://en.clipart-fr.com/data/clipart/house/furniture_195.jpg" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="baby" >       
+                        <p style="font-size: 25px;">5.</p>
+                        <img src="http://3.bp.blogspot.com/-J32oqTIxvSo/T7-Sr-x50zI/AAAAAAAAALU/WsnoCdU04Yk/s400/baby6.jpg" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="hair" >       
+                        <p style="font-size: 25px;">6.</p>
+                        <img src="http://www.hairstylestars.com/wp-content/uploads/2012/05/long-wavy-hair-straight-across-back.jpg" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="plate" >       
+                        <p style="font-size: 25px;">7.</p>
+                        <img src="https://www.hospitalitywholesale.com.au/products/chelsea-flat-rim-round-plate1.jpg" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>
+                    <div class="question" data-answer="banana" >       
+                        <p style="font-size: 25px;">8.</p>
+                        <img src="http://www.freestockphotos.biz/pictures/15/15912/Illustration%20of%20a%20banana.png" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="mouse" >       
+                        <p style="font-size: 25px;">9.</p>
+                        <img src="http://static-p1.photoxpress.com/jpg/00/14/77/32/400_F_14773232_tDIrdXvkbIcXf1pb7OkU1sudNLNdLZP5_PXP.jpg" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="house" >       
+                        <p style="font-size: 25px;">10.</p>
+                        <img src="http://www.presentermedia.com/files/clipart/00011000/11948/house_sky_sketch_md_wm.jpg" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="pencil" >      
+                        <p style="font-size: 25px;">11.</p>
+                        <img src="http://www.freestockphotos.biz/pictures/14/14223/pencil.png" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="ice" >       
+                        <p style="font-size: 25px;">12.</p>
+                        <img src="http://img2.timeinc.net/health/images/healthy-living/blocks-of-ice-400x400.jpg" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="paper" >       
+                        <p style="font-size: 25px;">13.</p>
+                        <img src="http://pixelberrypie.com/wp-content/uploads/2012/09/Pixelberrypie.com-Scrap-Paper-Torn-Wrinkled-Used-Ripped-edge-round-holes-red-lined-paper-jpeg.jpg" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="paint" >       
+                        <p style="font-size: 25px;">14.</p>
+                        <img src="http://2.bp.blogspot.com/--OnQA_61xXY/Tx2i6mehTsI/AAAAAAAACHY/trAgWnNoSuM/s1600/paint2.jpg" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="chair" >      
+                        <p style="font-size: 25px;">15.</p>
+                        <img src="http://img1.wfrcdn.com/lf/49/hash/518/8740062/1/Calligaris-Sandy-Chair.jpg" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="fire" >       
+                        <p style="font-size: 25px;">16.</p>
+                        <img src="http://thumbs.dreamstime.com/x/fire-icon-14779866.jpg" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="purple" >       
+                        <p style="font-size: 25px;">17.</p>
+                        <img src="http://media.benjaminmoore.com/WebServices/prod/ColorSwatch/2073-20.jpg" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="clock" >      
+                        <p style="font-size: 25px;">18.</p>
+                        <img src="http://img2.wfrcdn.com/lf/49/hash/622/10158819/1/The+Craftsman+Outdoor+Wall+Clock+with+Weather+Station.jpg" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="orange" >       
+                        <p style="font-size: 25px;">19.</p>
+                        <img src="http://4.bp.blogspot.com/-8EJepuEqkdM/TdLBqz6PPjI/AAAAAAAAArg/mX1RGrA8VwQ/s400/798orange.jpg" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="globe" >      
+                        <p style="font-size: 25px;">20.</p>
+                        <img src="http://img1.wfrcdn.com/lf/49/hash/465/6967654/1/Replogle-Globes-Discovery-Expedition-Somerset-Illuminated-World-Globe.jpg" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                </form>    
+        </div>
+        <div class="right_col">
+            <h1>Navigation Bar</h1>
+           <table width="120" border="1" align="center">
+            <tr>
+                <td width="120" align="center"> <a href="index.html"> <img src="button/button.jpeg"> </a> </td>
+            </tr>
+            <tr>
+                <td width="120" align="center"> <a href="page3.html"> <img src="button/button-2.jpeg"> </a> </td>
+            </tr>
+            <tr>
+                <td width="120" align="center"> <a href="page4.html"> <img src="button/button-3.jpeg"> </a> </td>
+            </tr>
+            </table>
+        </div>
+        <h3 id="score">Score: 0</h3>
+        <br class="clearer" /">
+        <div class="footer">
+            <span class="small">
+
+                <br />
+
+                Rashmi Rao and Ila Sethi
+            </span>
+        </div>
+    </div>
+
+

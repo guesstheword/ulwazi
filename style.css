@@ -1,0 +1,170 @@
+* { margin: 0; padding: 0; }
+
+
+@font-face {
+    font-family: "Bite Bullet";
+    src: url('fonts/bite_bullet/Bite _ Bullet.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Moon Flower";
+    src: url('fonts/moon_flower/Moon Flower.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Moon Flower Bold";
+    font-weight: bold;
+    src: url('fonts/moon_flower/Moon Flower Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Fish Fingers";
+    src: url('fonts/fishfingers/Fishfingers.ttf') format('truetype');
+}
+
+        html { height:100%; }
+
+        body {
+
+        background: #ffffff;
+
+        text-align: left;
+
+        width: 100%;
+
+        height: 100%;
+
+        font-size: 62.5%;
+
+        font-family: "Moon Flower Bold", sans-serif;
+
+        color: #000;
+
+        margin: 0;
+
+        border: 0;
+
+        padding: 0; }
+
+        a { color:#007ca5; text-decoration:none; outline: none; }
+
+        a:visited { color:#666; }
+
+        a:active { color:#999; }
+
+        .right_col a { color:#fff; text-decoration: none; outline: none; }
+
+        .right_col a:hover { color:#fff; text-decoration: underline; outline: none; }
+
+        .right_col a:visited { color:#fff; }
+
+        .right_col a:active { color:#fff; }
+
+        img, a img { border-style: none; }
+
+        h1, .h1 { font-size: 3.0em; }
+
+        h2, .h2 { font-size: 2.8em; } /* 30pt */
+
+        h3, .h3 { font-size: 2.6em; } /* 27pt */
+
+        h4, .h4 { font-size: 2.4em; } /* 25pt */
+
+        h5, .h5 { font-size: 2.2em; } /* 20pt */
+
+        h6, .h6 { font-size: 2em; } /* 15pt */
+
+        .small { font-size: 1.8em; }
+
+        .clearer { clear:both; }
+
+        .header {
+
+            font-family: "Moon Flower";
+
+            text-align: left;
+
+            background: #000066;
+
+            color: #fff;
+
+            width: 980px;
+
+            margin: 0 0 0 0;
+
+            border: 0;
+
+            padding: 10px;
+
+            overflow: hidden;
+
+            }
+
+        .main_col {
+
+            text-align: left;
+
+            float: left;
+
+            background: #fff;
+
+            color: #000;
+
+            width: 660px;
+
+            margin: 0 20px 0 0;
+
+            border: 0;
+
+            padding: 10px;
+
+            overflow: hidden;
+
+            }
+        .right_col {
+
+            font-family: "Bite Bullet";
+
+            text-align: left;
+
+            float: right;
+
+            background-image:url("Background/Background.jpg"); 
+
+            height:8760px;
+
+            color: #000066;
+
+            width: 280px;
+
+            padding: 10px;
+
+            overflow: hidden;
+
+            }
+
+        .footer {
+
+            text-align: left;
+
+            background: #cccccc;
+
+            color: #000;
+
+            width: 980px;
+
+            margin: 0 0 0 0;
+
+            border: 0;
+
+            padding: 10px;
+
+            overflow: hidden;
+
+            }
+        .wrapper {
+            text-align: center;
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            }

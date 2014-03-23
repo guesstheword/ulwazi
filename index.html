@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<head>
+
+<meta charset="utf-8" />
+
+    <title>Guess the Word!</title>
+
+    <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <br />
+            <h1>Guess the Word!</h1>
+            <h3>Knowledge helps you learn and grow, let's see how much you know!</h3>
+            
+        
+            <br /><br />
+        </div>
+        <div class="main_col" </div> 
+            <h2> Level 1: </h2>
+            <h2> In each box, type the word to match each picture. Then, press Submit. 
+            </h2>
+        
+            <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+                <script type="text/javascript">
+                    $(document).ready(function() {
+                        var score = 0;
+                        $('.submit').click(function() {
+                            var answer = $(this).parent().find('.answer').val();
+                            if(answer.toLowerCase() === $(this).parent().data('answer')) {
+                                score++;
+                                alert("Great job, you are correct!");
+                            } else {
+                                alert("Sorry, that answer is incorrect!");
+                            }
+                            $("#score").html("Score:" + score)
+                        });
+
+                    });
+                </script>
+
+                <form>
+                    <div class="question" data-answer="tree" >      
+                        <p style="font-size: 25px;">1.</p>
+                        <img src="http://www.formfonts.com/files/1/4640/small-linden-lime-tree-approx-high_FF_Model_ID4640_1_lime_tree01.jpg" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="cat" >       
+                        <p style="font-size: 25px;">2.</p>
+                        <img src="http://www.helpinghomelesscats.com/images/cat.jpg" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="dog" >       
+                        <p style="font-size: 25px;">3.</p>
+                        <img src="http://dog-pictures.clipartonline.net/_/rsrc/1359299640492/cartoon-dog-pictures-page-2/dog-cartoon_14.png?height=400" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="run" >       
+                        <p style="font-size: 25px;">4.</p>
+                        <img src="http://img2.timeinc.net/health/images/gallery/living/ggm-running-striders-400.jpg" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="rug" >       
+                        <p style="font-size: 25px;">5.</p>
+                        <img src="http://thumbs.dreamstime.com/x/retro-cartoon-carpet-37598561.jpg" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="car" >       
+                        <p style="font-size: 25px;">6.</p>
+                        <img src="http://us.123rf.com/400wm/400/400/klv/klv1109/klv110900021/10577093-drawing-of-the-yellow-expensive-car.jpg" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="pan" >       
+                        <p style="font-size: 25px;">7.</p>
+                        <img src="http://www.clipproject.info/images/joomgallery/details/objects_33/pan_clip_art_free_20121124_1351727321.gif" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>
+                    <div class="question" data-answer="hat" >       
+                        <p style="font-size: 25px;">8.</p>
+                        <img src="http://www.freestockphotos.biz/pictures/15/15576/Illustration%20of%20a%20red%20cartoon%20hat.png" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="saw" >       
+                        <p style="font-size: 25px;">9.</p>
+                        <img src="http://en.clipart-fr.com/data/clipart/tool/tool_023.jpg" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="sun" >       
+                        <p style="font-size: 25px;">10.</p>
+                        <img src="http://s4.hubimg.com/u/796411.png" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="moon" >      
+                        <p style="font-size: 25px;">11.</p>
+                        <img src="http://myctrring.com/wp-content/uploads/2009/01/moon.jpg" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="cow" >       
+                        <p style="font-size: 25px;">12.</p>
+                        <img src="http://1.bp.blogspot.com/-0SsBamHj1ww/TrQMV3pqq5I/AAAAAAAADK4/58mXeGmyZR4/s400/Cow%20wallpaper%20(8).jpg" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="pig" >       
+                        <p style="font-size: 25px;">13.</p>
+                        <img src="http://www.southernstates.com/images/rotator/pig.png" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="egg" >       
+                        <p style="font-size: 25px;">14.</p>
+                        <img src="http://www.raw-food-health.net/images/RawEgg.jpg" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="door" >      
+                        <p style="font-size: 25px;">15.</p>
+                        <img src="http://us.123rf.com/400wm/400/400/ika747/ika7471008/ika747100800015/7524827-door-icon.jpg" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="zip" >       
+                        <p style="font-size: 25px;">16.</p>
+                        <img src="http://us.123rf.com/450wm/happyroman/happyroman1112/happyroman111200671/11486432-vector-zipper.jpg" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="bat" >       
+                        <p style="font-size: 25px;">17.</p>
+                        <img src="http://thumbs.dreamstime.com/x/baseball-bat-5827348.jpg" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="ball" >      
+                        <p style="font-size: 25px;">18.</p>
+                        <img src="http://bestclipartblog.com/clipart-pics/ball-clip-art-1.jpg" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="bag" >       
+                        <p style="font-size: 25px;">19.</p>
+                        <img src="http://thumbs.dreamstime.com/x/green-shopping-bag-3d-23798645.jpg" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                    <div class="question" data-answer="blue" >      
+                        <p style="font-size: 25px;">20.</p>
+                        <img src="http://thumbs.dreamstime.com/x/blue-paint-splatter-13629021.jpg" /> 
+                        <input type='text' class="answer" />
+                        <input type="button" value="Submit" class="submit" />
+                    </div>  
+                </form>    
+        </div>
+        <div class="right_col">
+            <h1>Navigation Bar</h1>
+           <table width="120" border="1" align="center">
+            <tr>
+                <td width="120" align="center"> <a href="navbar.html"> <img src="button/button.jpeg"> </a> </td>
+            </tr>
+            <tr>
+                <td width="120" align="center"> <a href="page3.html"> <img src="button/button-2.jpeg"> </a> </td>
+            </tr>
+            <tr>
+                <td width="120" align="center"> <a href="page4.html"> <img src="button/button-3.jpeg"> </a> </td>
+            </tr>
+            </table>
+        </div>
+        <h3 id="score">Score: 0</h3>
+        <br class="clearer" /">
+        <div class="footer">
+            <span class="small">
+
+                <br />
+
+                Rashmi Rao and Ila Sethi
+            </span>
+        </div>
+    </div>
+
+
